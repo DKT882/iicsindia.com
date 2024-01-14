@@ -1,0 +1,392 @@
+:root {
+    --bg_green: #00B16A;
+    --theme_green:rgb(42, 159, 48);
+    --shadow:#bfbfbf;
+}
+
+
+.slider-text{
+    display: flex;
+    width: 1116px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.slide-image {
+    background-image: url("https://i0.wp.com/www.iicsindia.com/wp-content/uploads/2023/02/IMG-20230213-WA0006-1.jpg?resize=1078%2C575&ssl=1");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+.multi-text {
+    margin-top: 60px;
+    /* position: relative;
+    top: 100px;
+    left: 200px; */
+}
+
+.multimedia {
+    font-size: 45px;
+    line-height: 70px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.comp-institute {
+    font-size: 16px;
+    color: #fff;
+    padding-right: 100px;
+}
+
+.buttons {
+    margin: 60px 0;
+}
+
+.buttons a {
+    text-decoration: none;
+    /* color: black; */
+    margin: 0 20px;
+    padding: 15px 20px;
+    background-color: var(--bg_green);
+    border-radius: 45px;
+}
+
+.about-multi:hover{
+    background-color: white;
+}
+
+.contact-us{
+    background-color: white!important;
+}
+.contact-us:hover{
+    background-color: var(--bg_green)!important;
+}
+
+
+.achievements{
+    text-wrap: nowrap;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    /* line-height: 300px */
+    margin: 120px 0 0%;
+}
+
+.outer-hr{
+    display: flex;
+    margin:1.5px;
+}
+.extra-hr{
+    width: 40px;
+}
+hr{
+    width: 125px;
+    height: 1.5px;
+    background-color: black;
+}
+.slogen{
+    margin-top: 10px;
+}
+.first-p{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.inner-card{
+    box-sizing:border-box;
+    width: 370px;
+}
+
+.inner-card p{
+    margin:10px 15px 10px 0 ;
+}
+.second-p{
+    color: gray;
+    font-size: 14px;
+}
+.card-image{
+    height: 250px;
+    background-repeat:no-repeat;
+    width: 371px;
+    overflow: hidden;
+}
+.card-image img{
+    transition: 0.37s;
+}
+
+.card-image img:hover{
+    transform: scale(1.2) rotate(7deg);
+}
+.card-image:backg{
+    transform: rotate(45deg),scale(1.3);
+}
+
+.main-card{
+    margin-top: 60px;
+}
+.cards{
+    margin:0 20px;
+}
+
+@media screen and (max-width:1275px) {
+
+    .card-image,.inner-card,.card-image,.card-image img{
+        width: 30vw;
+    }
+    .card-image{
+        height:90%;
+    }
+}
+
+
+@media only screen and (max-width:755px){
+    .main-card{
+        flex-direction: column;
+    }
+    .card-image,.inner-card,.card-image,.card-image img{
+        width: 90vw;
+    }
+    .card-image{
+        height:90%;
+    }
+}
+
+.students{
+    background-color: gray;
+}
+
+.left-button,.right-button{
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(80, 79, 79);
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.left-button:hover,.right-button:hover{
+    background-color: white;
+}
+.left-button svg,.right-button svg{
+    height: 20px;
+    width: 20px;
+    transition: 0.7s;
+    fill: white;
+}
+.left-button:hover.left-button svg,.right-button:hover.right-button svg{
+    fill: var(--theme_green);
+}
+
+.st-img-mar{
+    transition: 1s;
+    position: relative;
+    background-color: white;
+    border-radius: 100%;
+    top: 35px;
+}
+.st-img-mar img{
+    padding: 5px;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    transition: 0.5s;
+}
+
+.st-card-box{
+    background-color: white;
+    padding: 25px;
+    cursor: context-menu;
+}
+.st-card-box p{
+    font-size: 1.2vw;
+}
+.st-card-box h4{
+    font-size: 1.8vw;
+}
+.st-card-box-margin{
+    width: 35vw;
+    box-sizing: content-box;
+}
+
+.student-card-hover:hover .st-img-mar img{
+    rotate: 360deg;
+}
+
+
+.st-card-box svg{
+    height: 40px;
+    width: 40px;
+}
+
+@keyframes imagemargin {
+    from{
+        background-color: rgba(42, 159, 48, 0.5);
+    }
+    to{
+        background-color: var(--theme_green);
+    }
+}
+
+.student-card-hover:hover .st-img-mar{
+    animation: imagemargin 0.5s linear;
+    background-color:var(--theme_green);
+}
+
+
+
+
+.upcoming-inn-card{
+    margin: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    width: 22vw;
+}
+.upcoming-inn-card:hover{
+    box-shadow: 0px 0  20px 1px;
+}
+.upcoming-inn-card-img img{
+    width: 22vw;
+}
+.calender{
+    margin: 20px 0 5px -8px;
+    font-size: 15px;
+    text-wrap: nowrap;
+    cursor: context-menu;
+}
+.cal-inn-2{
+    box-shadow: -1px 0px rgb(174, 172, 172);
+    margin-left: 21px;
+    padding:0 21px;
+}
+.upcoming-inn-card h3{
+    margin: 10px;
+    cursor: pointer;
+}
+.upcoming-inn-card p{
+    cursor: context-menu;
+    margin: 10px;
+    font-size: 15px;
+}
+.rm-button{
+    display: inline-block;
+    border: 3px solid var(--theme_green);
+    color: var(--theme_green);
+    font-weight: bolder;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 10px 30px;
+}
+.rm-button:hover{
+    background-color: var(--theme_green);
+    color: white;
+}
+
+
+
+
+
+.fun-fact{
+    height: 390px;
+    background-color: var(--theme_green);
+}
+
+.active-courses{
+    display: flex;
+    column-gap: 10em;
+    align-items: center;
+}
+.active-wrap{
+    column-gap: 10em;
+}
+
+.institute-svg path{
+    fill: white;
+}
+.active-first,.active-second{
+    color: white;
+    margin: -5px 0;
+}
+.active-first{
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.institute:hover{
+    transform: translateY(-15px);
+    transition:0.3s;
+}
+
+
+@media screen and (max-width:1260px){
+    .active-courses{
+        flex-direction: column;
+        column-gap: 10em;
+        row-gap: 2em;
+    }
+    .active-wrap{
+        column-gap: 10em;
+        row-gap: 2em;
+    }
+    
+}
+
+
+.blog-card{
+    background-color: white;
+    box-shadow:0 0 12px 2px var(--shadow);
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.blog-lr-buttons{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.blog-card .card-image{
+    transition: 0.37s;
+    overflow: hidden;
+}
+
+.blog-card:hover.blog-card .card-image img{
+    transform: scale(1.2) rotate(7deg);
+}
+
+
+
+.blog-button{
+    margin-left:15px;
+    margin-bottom: 15px;
+    height: 40px;
+    width: 180px;
+    background-color: var(--theme_green);
+    transition: 0.5s;
+}
+.blog-button>p{
+    font-weight: bold   ;
+    margin-right: 3px!important;
+    color: white;
+}
+.blog-button>svg path{
+    fill: white;
+}
+
+.blog-button:hover{
+    background-color: black;
+}
+.blog-inner-card p{
+    margin: 10px 15px 10px 15px;
+}
+
+.blog-main-card{
+    column-gap: 30px;
+}

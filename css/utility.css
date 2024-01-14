@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.p-l-10{
+    padding-left: 10px;
+}
+
+.w90{
+    width: 90px;
+}
+
+.contaxt-menu{
+    cursor: context-menu;
+}
+.pointer{
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+}
+
+.w1000{
+    width: 1000px;
+}
+
+.ml30{
+    margin-left : 30px;
+}
+.mr30{
+    margin-right: 30px;
+}
+
+.h-70{
+    height: 70px;
+}
+
+.p-bottom{
+    padding-bottom: 50px;
+}
+
+.ml11vw{
+    margin-left: 11vw;
+}
+.ml10{
+    margin-left: 10px;
+}
+.p-lr-30{
+    padding: 0 20px;
+}
+.list-none{
+    list-style-type: none;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.justify-left{
+    justify-content: flex-end;
+}
+
+.mt40{
+    margin-top: 40px;
+}
+
+.green-svg path{
+    fill:rgb(42, 159, 48);
+}
+
+.bg-green{
+    background-color: rgb(42, 159, 48);
+    color: white;
+}
+
+.f-column{
+    flex-direction: column;
+}
+.align-start{
+    align-items: flex-start;
+}
+
+.width-Course{
+    width: 94.025px!important;
+}
+.width-academics{
+    width: 116.238px!important;
+}
+.width-advance{
+    width: 174.188px!important;
+}
+.pos-rel{
+    position: relative;
+}
+
+.wrap{
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.advance{
+    display: grid;
+    grid-template-columns: 1;
+    align-items: center;
+    justify-content: center;
+}
+.advance div{
+    padding: 20px;
+    width: 195px;
+}
+.advance-drop{
+    position: relative;
+    top: 2px;
+    left: 11px;
+}

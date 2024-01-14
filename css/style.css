@@ -1,0 +1,222 @@
+:root{
+    --bg-green:rgb(42, 159, 48);
+    --topbar:#252525;
+    --shadow:#bfbfbf;
+    --menu:#e2eae2;
+    --menu_green:rgb(12, 146, 18);
+    --gray:rgb(136, 136, 136);
+}
+
+
+header{
+    z-index: 100;
+    position: relative;
+}
+
+
+.top-bar{
+    background-color: var(--topbar);
+    color: aliceblue;
+    height: 49px;
+    justify-content: center;
+    align-items: center;
+}
+.extra-box{
+    width: 39vw;
+}
+
+.top-navigation svg{
+    margin-right: 7px;
+}
+
+@media only screen and (max-width:1047px){
+    .extra-box{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:755px){
+    .top-bar{
+        height: 100px;
+    }
+    .top-navigation ul li{
+        margin: 5px 0;
+    }
+    .top-res-col{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}
+
+
+/* top bar completed */
+
+
+
+.sec-box{
+    height: 170px;
+    justify-content: space-around;
+}
+.iics-logo{
+    width: 170px;
+    align-items: center;
+}
+.margin-border{
+    height: 40px;
+    width: 40px;
+    border-radius: 90px;
+    margin: 5px;
+    outline: 0.3px solid rgba(12, 146, 19, 0.536);
+}
+
+@media only screen and (max-width:755px){
+    .call-and-branches{
+        visibility: hidden;
+    }
+    .menu-svg{
+        display: flex!important;
+    }
+}
+
+.menu-svg{
+    height: 140px;
+    align-items: flex-end;
+    display: none;
+}
+
+/* Inner header completed here */
+
+header{
+    display: unset;
+}
+
+.dropdown-arrow{
+    margin: 6px;
+}
+
+.menu{
+    box-shadow:0 0 12px 2px var(--shadow);
+    background-color: var(--menu);
+    position: sticky;
+    top: 40px;
+}
+
+
+@keyframes menu-green{
+    from{
+        background-color: rgba(12, 146, 19, 0.323);
+        color: rgba(255, 255, 255, 0.348);
+        fill:rgba(255, 255, 255, 0.348);
+    }
+    to{
+        background-color: rgb(12, 146, 18);
+        color: white;
+        fill:white;
+    }
+}
+.menu-list li:hover ,.menu-list li:hover svg path{
+    animation: menu-green 0.5s linear;
+    background-color: var(--menu_green);
+    color: white;
+    fill: white;
+    cursor: pointer;
+}
+
+.dropdown{
+    box-shadow:0 0 12px 2px var(--gray);
+    position: relative;
+    top: 131px;
+}
+.dropdown li{
+    padding:10px 20px;
+    background-color: white;
+    color: var(--gray);
+    display: none;
+    width: 196px;
+}
+.courses-drop{
+    top: 145px;
+    left: -114px;
+}
+
+.drop-menu:hover .dropdown li,.soft:hover .inner-drop,.hard:hover .hard-inner,.e-acc:hover .e-acc-inner,.multi:hover .multi-inner,.web-eng:hover .web-eng-inner,.advance:hover:hover .advance-drop li,.cyber:hover .cyber-inner,.digital:hover .digital-inner,.corporate:hover .corporate-inner,.short-tearm:hover .short-tearm-inner,.academics:hover .academics li{
+    display: list-item;
+    cursor: pointer;
+}
+.drop-menu:hover .dropdown,.soft:hover .inner-drop,.hard:hover .hard-inner,.e-acc:hover .e-acc-inner,.multi:hover .multi-inner,.web-eng:hover .web-eng-inner,.advance:hover .advance-drop,.cyber:hover .cyber-inner,.digital:hover .digital-inner,.corporate:hover .corporate-inner,.short-tearm:hover .short-tearm-inner,.academics:hover .academics{
+    animation: dropdown-zoom 0.2s linear;
+}
+
+.inner-drop{
+    position: absolute;
+    top: 0;
+    left: 236px;
+    padding:0;
+    background-color: white;
+    color: var(--gray);
+    box-shadow:0 0 12px 2px var(--gray);
+    display: none;
+}
+.hard-inner{
+    top: 38px;
+}
+.e-acc-inner{
+    top: 76.5px;
+}
+.multi-inner{
+    top: 114px;
+}
+.web-eng-inner{
+    top: 153px;
+}
+
+.digital-inner{
+    top: 38px;
+}
+.corporate-inner{
+    top: 76px;
+}
+.short-tearm-inner{
+    top: 114px;
+}
+.academics-drop{
+    top: 57px;
+    right: 134px;
+}
+
+@keyframes dropdown-zoom{
+    from{
+        transform: scaleY(0.4) scaleX(0.6);
+    }
+    to{
+        transform:scale(1);
+    }
+}
+
+@media screen and (max-width:1275px) {
+
+    .upcoming-inn-card{
+        width:337.913px!important;
+    }
+    
+    .upcoming-inn-card-img img{
+        width: 337.913px!important;
+    }
+
+
+
+    .menu{
+        height: 140px!important;
+    }
+    .menu-list{
+        flex-wrap:wrap;
+    }
+    
+}
+@media screen and (max-width:755px){
+    .menu{
+        display: none;
+    }
+}
